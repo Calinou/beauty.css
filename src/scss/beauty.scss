@@ -1,0 +1,162 @@
+// This file is part of beauty.css.
+// Copyright (c) 2016 Calinou and contributors
+// Licensed under the MIT license, see `LICENSE.md`.
+// https://github.com/Calinou/beauty.css
+
+// Size variables
+$h1-margin: 2rem;
+$code-padding: 0.125rem;
+$code-border-radius: 0.25rem;
+$kbd-padding: 0.125rem;
+$kbd-border-radius: 0.25rem;
+$footer-padding: 0.375rem;
+$footer-margin-top: 3rem;
+$blockquote-vertical-padding: 0.75rem;
+$blockquote-padding-left: 1rem;
+
+// Color variables
+$body-background-color: #f8f8f8;
+$body-color: #333;
+$code-background-color: #e4e4e4;
+$code-color: #333;
+$selection-background-color: #2297e0;
+$a-color: #2297e0;
+$a-hover-background-color: lighten($a-color, 35%);
+$selection-color: #fff;
+$kbd-background-color: #fff;
+$kbd-border-color: #ccc;
+$kbd-color: #333;
+$blockquote-background-color: #eee;
+$blockquote-border-color: #999;
+$blockquote-color: #777;
+$footer-color: #888;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "San Francisco", sans-serif;
+  background-color: $body-background-color;
+  color: $body-color;
+  line-height: 1.6;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+::-moz-selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+}
+
+::selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+}
+
+@media (min-width: 40rem) {
+  body {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 60rem) {
+  body {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 80rem) {
+  body {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 100rem) {
+  body {
+    max-width: 60%;
+  }
+}
+
+h1 {
+  margin: $h1-margin 0;
+  text-align: center;
+}
+
+h2 {
+  margin: ($h1-margin * 0.75) 0;
+}
+
+h3 {
+  margin: ($h1-margin * 0.5) 0;
+}
+
+h4 {
+  margin: ($h1-margin * 0.375) 0;
+}
+
+h5 {
+  margin: ($h1-margin * 0.375) 0;
+}
+
+h6 {
+  margin: ($h1-margin * 0.375) 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+li {
+  list-style-position: inside;
+}
+
+code,
+pre {
+  background-color: $code-background-color;
+  color: $code-color;
+  padding: $code-padding;
+  border-radius: $code-border-radius;
+  font-size: 0.875rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  tab-size: 2;
+}
+
+kbd {
+  background-color: $kbd-background-color;
+  color: $kbd-color;
+  border: 1px solid $kbd-border-color;
+  padding: $kbd-padding;
+  border-radius: $kbd-border-radius;
+}
+
+blockquote {
+  border-left: 3px solid $blockquote-border-color;
+  padding: $blockquote-vertical-padding 0 $blockquote-vertical-padding $blockquote-padding-left;
+  color: $blockquote-color;
+  background-color: $blockquote-background-color;
+}
+
+footer {
+  text-align: center;
+  color: $footer-color;
+  padding: $footer-padding;
+  margin-top: $footer-margin-top;
+}
+
+a {
+  color: $a-color;
+  text-decoration: none;
+  transition: 0.15s background-color;
+  &:hover {
+    background-color: $a-hover-background-color;
+  }
+  &:active {
+    background-color: darken($a-hover-background-color, 10%);
+  }
+}

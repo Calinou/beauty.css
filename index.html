@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dist/css/beauty.min.css">
+    <title>beauty.css example page</title>
+  </head>
+  <body>
+    <h1>beauty.css example page</h1>
+    <h2>Turns your plain HTML into something pretty</h2>
+    <h3>How?</h3>
+    <p>
+      With under 200 lines of SCSS code, your HTML becomes responsive, more
+      readable, while retaining its very fast loading speed.
+      <strong>beauty.css</strong> weighs about 1.1 KB minified! Just look at the
+      examples below.
+    </p>
+    <blockquote>
+      Example quote. Insert something stupid here.
+    </blockquote>
+    <h4>More details</h4>
+    <ul>
+      <li>List item</li>
+      <li>Another list item</li>
+      <li>Yet another list item</li>
+    </ul>
+    <h2>Features</h2>
+    <h3>&lt;code&gt;</h3>
+    <code>// Here, have code</code>
+    <h3>&lt;pre&gt;</h3>
+    <pre>
+      static int stb__Mul8Bit(int a, int b)
+      {
+        int t = a*b + 128;
+        return (t + (t >> 8)) >> 8;
+      }
+
+      static void stb__From16Bit(unsigned char *out, unsigned short v)
+      {
+         int rv = (v &amp; 0xf800) >> 11;
+         int gv = (v &amp; 0x07e0) >>  5;
+         int bv = (v &amp; 0x001f) >>  0;
+
+         out[0] = stb__Expand5[rv];
+         out[1] = stb__Expand6[gv];
+         out[2] = stb__Expand5[bv];
+         out[3] = 0;
+      }
+    </pre>
+    <h3>&lt;a&gt;</h3>
+    <p><a href="#">Example link</a></p>
+    <h3>&lt;kbd&gt;</h3>
+    <p>Press <kbd>Alt+F4</kbd> to close this window!</p>
+    <footer>
+      <p>
+        &copy; 2016 Calinou and contributors<br>
+        Licensed under the MIT license.
+      </p>
+    </footer>
+  </body>
+</html>

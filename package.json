@@ -1,0 +1,12 @@
+{
+  "name": "beauty.css",
+  "description": "Turns your plain HTML pages into something pretty",
+  "author": "Calinou",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0"
+  }
+}
